@@ -35,6 +35,23 @@ POST
         * "Content-Type": "application/json"
         * "Authorization": "Bearer "+ the token gained from the authentication GET above
 
+Unit Tests
+-----------------------------------------------------------------
+I attempted to create a series of four different Unit Tests to demonstrate how to interact with the API without the front end system. In order of numbering:
+
+1. For the first unit test it is just a simple showcase of how to call the API for an authenticator token then accesses the API to set a value into the liste of dictionaries.
+
+2. This one is a showcase how attempting to access the /quotation POST section of the API without the correct authenticator token will result in a failure.
+
+3. This Unit test is a showcase in how calling the API mulitple times with a single key will work.
+
+4. This Unit test is to showcase how inputting a value less than 18 into the API will result in a failure.
+
+To run a Unit Test, go to the folder where it is located and run:
+
+python UnitTestX.py 
+
+in the command line.
 
 Final Notes
 -----------------------------------------------------------------
@@ -43,3 +60,4 @@ This was my first ever attempt a Fullstack project! Since this was my first atte
 
 I originally attempted to make it so the front end product had to check the ages instead of the API, but I realized that assumption was not going to hold weight in the end so I changed the API to check instead.
 
+I am not sure how good the Unit Tests are in showcasing how good the API can function without needing the front end system. 
